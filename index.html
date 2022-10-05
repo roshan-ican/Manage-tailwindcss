@@ -1,351 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage Loading page</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="relative container mx-auto p-6">
-      <!-- flex container -->
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="pt-2">
-          <img src="images/logo.svg" alt="" />
-        </div>
-        <!-- Menu Items -->
-        <div class="hidden space-x-6 md:flex">
-          <a href="#" class="hover:text-darkGreyishBlue">Pricing</a>
-          <a href="#" class="hover:text-darkGreyishBlue">Product</a>
-          <a href="#" class="hover:text-darkGreyishBlue">About Us</a>
-          <a href="#" class="hover:text-darkGreyishBlue">Carrers</a>
-          <a href="#" class="hover:text-darkGreyishBlue">Community</a>
-        </div>
-        <!-- Button -->
-        <a
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- flex container -->
+    <div class="flex items-center justify-around">
+      <!-- Logo -->
+      <div class="pt-2 mx-4">
+        <img src="https://www.fastxpo.com/fxp/images/logo.png" alt="" />
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-yellow-600 font-semibold">Blockchain</a>
+        <a href="#" class="hover:text-darkGreyishBlue">Token</a>
+        <a href="#" class="hover:text-darkGreyishBlue">NFT</a>
+        <a href="#" class="hover:text-darkGreyishBlue">Exchange</a>
+        <a href="#" class="hover:text-darkGreyishBlue">Tokenization</a>
+        <a href="#" class="hover:text-darkGreyishBlue">Company</a>
+        <a href="#" class="hover:text-darkGreyishBlue">Contact Us</a>
+
+      </div>
+      <!-- Button -->
+      <!-- <a
           href="#"
           class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden md:block"
           >Get Started</a
-        >
+        > -->
       <!-- Hamburger Icon -->
-        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-          >
-        </button>
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
         >
-          <a href="#">Pricing</a>
-          <a href="#">Product</a>
-          <a href="#">About Us</a>
-          <a href="#">Careers</a>
-          <a href="#">Community</a>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#">Pricing</a>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+      <!-- Left Item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+          Blockchain Development Comapany.
+        </h1>
+        <p class="text-center text-darkGreyishBlue max-w-sm md:text-left">
+          Manage makes it simple for software teams to plan day to day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <div class="flex justify-center md:justify-start space-x-2 ">
+          <a href="#" class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight">
+            Create Your Own Token
+          </a>
+          <a href="#" class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight">
+            Know More
+          </a>
         </div>
       </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-      <!-- Flex Container -->
-      <div
-        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
-      >
-        <!-- Left Item -->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-          <h1
-            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
-          >
-            Bring everyone together to build better products.
-          </h1>
-          <p class="text-center text-darkGreyishBlue max-w-sm md:text-left">
-            Manage makes it simple for software teams to plan day to day tasks
-            while keeping the larger team goals in view.
-          </p>
-          <div class="flex justify-center md:justify-start">
-            <a
-              href="#"
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-        <!-- Image -->
-        <div class="md:w-1/2">
-          <img src="images/illustration-intro.svg" alt="" />
-        </div>
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="images/illustration-intro.svg" alt="" />
       </div>
-    </section>
-    <!-- Features -->
-    <section id="features">
-      <div
-        class="container flex flex-col px4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
-      >
-        <!-- What's different -->
-        <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-d text-4xl font-bold text-center md:text-left">
-            What's different about Manage?
-          </h2>
-          <p class="max-w-sm text-center text-darkGreyishBlue md:text-left">
-            Manage provides all the functionality your team needs, without the
-            complexity. Our software is tailor-made for modern digital product
-            teams
-          </p>
-        </div>
-        <!-- Numbered List -->
-        <div class="flex flex-col space-y-8 md:w-1/2">
+    </div>
+  </section>
+  <!-- Features -->
+  <section id="features">
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+
+      <!-- Numbered List -->
+      <!-- <div class="flex flex-col space-y-8 md:w-1/2">
           <!-- list item 1 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- Heading -->
-            <div class="rounded-1-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  01
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Track company-wide progress
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Track company-wide progress
-              </h3>
-              <p class="text-darkGreyishBlue">
-                See how your day-to-day tasks fit into the wider vision. Go from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture
-                again.
-              </p>
-            </div>
-          </div>
-          <!-- List Item 2 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- Heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  02
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Advanced built-in reports
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Advanced built-in reports
-              </h3>
-              <p class="text-darkGreyishBlue">
-                Set internal delivery estimates and track progress toward
-                company goals. Our customisable dashboard helps you build out
-                the reports you need to keep key stakeholders informed.
-              </p>
-            </div>
-          </div>
-          <!-- List Item 3 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <!-- Heading -->
-            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  03
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Everything you need in one place
-                </h3>
-              </div>
-            </div>
-
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Everything you need in one place
-              </h3>
-              <p class="text-darkGreyishBlue">
-                Stop jumping from one service to another to communicate, store
-                files, track tasks and share documents. Manage offers an
-                all-in-one team productivity solution.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="md:w-1/2">
+        <img
+          src="https://img.freepik.com/free-vector/cryptocurrency-trading-desk-abstract-concept-illustration-bitcoin-futures-platform-crypto-exchange-trade-service-financial-technology-business-smart-order-routing_335657-878.jpg"
+          alt="" class="object-cover max-w-full h-auto " />
       </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials">
-      <!-- container to heading and testm block -->
-      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-        <!-- Heading -->
-        <h2 class="text-4xl font-bold text-center">
-          What's different about Manage?
+      <!-- List Item 2 -->
+      <!-- List Item 3 -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h2 class="max-w-d text-4xl font-bold text-center md:text-left">
+          Token Creation Services?
         </h2>
-        <!-- Testimonials Container -->
-        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-          <!-- Testimonial 1 -->
-          <div
-            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:w-1/3"
-          >
-            <img src="images/avatar-anisha.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Anisha Li</h5>
-            <p class="text-sm text-darkGreyishBlue">
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
-          </div>
-          <!-- Testimonial 2 -->
-          <div
-            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:flex md:w-1/3"
-          >
-            <img src="images/avatar-ali.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Ali Bravo</h5>
-            <p class="text-sm text-darkGreyishBlue">
-              “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused.”
-            </p>
-          </div>
-          <!-- Testimonials 3 -->
-          <div
-            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
-          >
-            <img src="images/avatar-richard.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Richard Watts</h5>
-            <p class="text-sm text-darkGreyishBlue">
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
-          </div>
-        </div>
-        <!-- Button -->
-        <div class="my-16">
+        <p class="max-w-sm text-center text-darkGreyishBlue md:text-left">
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams
+        </p>
+      </div>
+    </div>
+    <!-- What's different -->
+    </div>
+  </section>
+  <!-- Leading Blockchain application section -->
+  <section class="leading-blockchain">
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+      <!-- Left Item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+          Leading Blockchain Application Development Company
+        </h1>
+        <p class="text-center text-darkGreyishBlue max-w-sm md:text-left">
+          Manage makes it simple for software teams to plan day to day tasks
+          while keeping the larger team goals in view.
+          Crypto is india's leading blockchain company
+        </p>
+        <!-- <div class="flex justify-center md:justify-start space-x-2 ">
           <a
             href="#"
-            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-            >Get Started</a
+            class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight"
           >
-        </div>
-      </div>
-    </section>
-    <!-- CTA Section Call to Action -->
-    <section id="cta" class="bg-brightRed">
-      <div
-        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
-      >
-        <!-- Heading -->
-        <h2
-          class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
-        >
-          Simplify How Your Team Works Today!
-        </h2>
-        <!-- Button -->
-        <div>
+            Create Your Own Token
+          </a>
           <a
             href="#"
-            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-darkBlue"
-            >Get Started</a
+            class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight"
           >
+            Know More
+          </a>
+        </div> -->
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="images/illustration-intro.svg" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- Card carasouls -->
+  <section>
+    <div class="flex flex-col mb-5 space-y-12 md:1/2 items-center">
+      <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left">
+        Explore our blockchain development services
+      </h1>
+      <p class="max-w-full text-center text-darkGreyishBlue md:text-left">
+        Manage makes it simple for software teams to plan day to day tasks
+        while keeping the larger team goals in view.
+        Crypto is india's leading blockchain company
+      </p>
+    </div>
+    <div class="flex">
+
+      <div class="w-2/12 flex items-center">
+        <div class="w-full text-right">
+          <button class="p-3 rounded-full bg-white border border-gray-700 shadow-lg mr-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-veryDarkBlue">
-      <!-- Flex Container -->
+      <div id="sliderContainer" class="w-full">
+        <ul id="slider" class="flex w-full">
+          <li class="w-96 p-5">
+            <div class="min-h-full w-full border rounded-lg p-5 ">
+              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Hyper Ledger Development</h5>
+              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+                similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+                maxime eos. Delectus, esse veniam!</p>
+
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="min-h-full w-full border rounded-lg p-5 ">
+              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Private Blockchain Development</h5>
+              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+                similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+                maxime eos. Delectus, esse veniam!</p>
+
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="min-h-full w-full border rounded-lg p-5 ">
+              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
+              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+                similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+                maxime eos. Delectus, esse veniam!</p>
+
+            </div>
+          </li>
+          <!-- test -->
+          
+        </ul>
+      </div>
+      <div class="w-2/12 flex items-center">
+        <div class="w-full">
+          <button class="p-3 rounded-full bg-white border border-gray-700 shadow-lg ml-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+
+            </svg>
+
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Features section -->
+  <section>
+      <div class="flex flex-col mb-5 space-y-12 md:1/2 items-center">
+        <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left">
+          Features of our Blockchain-based supply chain solution
+        </h1>
+        <p class="max-w-full text-center text-darkGreyishBlue md:text-left">
+          To ensure the great performance of our blockchain supply we've add the following features to our website
+        </p>
+    </div>
+    <!-- the features cards -->
+    <div class="justify-around">
+      <ul id="slider" class="grid grid-cols-3 max-w-full min-h-full gap-5 space-y-5 overflow-hidden">
+        <li class="w-full p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Hyper Ledger Development</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+        <li class="w-96 p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Private Blockchain Development</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+        <li class="w-full p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+        <li class="w-full p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+        <li class="w-full p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+        <li class="w-full p-5">
+          <div class="min-h-full w-full border rounded-lg p-5 ">
+            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
+            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
+              maxime eos. Delectus, esse veniam!</p>
+
+          </div>
+        </li>
+      
+        
+      </ul>
+
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <!-- container to heading and testm block -->
+    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl font-bold text-center">
+        What's different about Manage?
+      </h2>
+      <!-- Testimonials Container -->
+      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+        <!-- Testimonial 1 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:w-1/3">
+          <img src="images/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+          <h5 class="text-lg font-bold">Anisha Li</h5>
+          <p class="text-sm text-darkGreyishBlue">
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps
+            everyone motivated.”
+          </p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:flex md:w-1/3">
+          <img src="images/avatar-ali.png" class="w-16 -mt-14" alt="" />
+          <h5 class="text-lg font-bold">Ali Bravo</h5>
+          <p class="text-sm text-darkGreyishBlue">
+            “We have been able to cancel so many other subscriptions since
+            using Manage. There is no more cross-channel confusion and
+            everyone is much more focused.”
+          </p>
+        </div>
+        <!-- Testimonials 3 -->
+        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+          <img src="images/avatar-richard.png" class="w-16 -mt-14" alt="" />
+          <h5 class="text-lg font-bold">Richard Watts</h5>
+          <p class="text-sm text-darkGreyishBlue">
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps
+            everyone motivated.”
+          </p>
+        </div>
+      </div>
+      <!-- Button -->
+      <div class="my-16">
+        <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
+          Started</a>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section Call to Action -->
+  <section id="cta" class="bg-brightRed">
+    <div
+      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+      <!-- Heading -->
+      <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+        Simplify How Your Team Works Today!
+      </h2>
+      <!-- Button -->
+      <div>
+        <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-darkBlue">Get
+          Started</a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-veryDarkBlue">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links container -->
       <div
-        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
-      >
-        <!-- Logo and social links container -->
-        <div
-          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
-        >
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
         <div class="mx-auto my-6 text-center text-white md:hidden">
           Copyright &copy; 2022, All Rights Reserved
         </div>
-          <!-- Logo -->
-          <div>
-            <img src="images/logo-white.svg" class="h-8" alt="" />
-          </div>
-          <!-- Social Links Container -->
-          <div class="flex justify-center space-x-4">
-            <!-- Link 1 -->
-            <a href="#">
-              <img src="images/icon-facebook.svg" alt="" class="h-8" />
-            </a>
-            <!-- Link 2 -->
-            <a href="#">
-              <img src="images/icon-youtube.svg" alt="" class="h-8" />
-            </a>
-            <!-- Link 3 -->
-            <a href="#">
-              <img src="images/icon-twitter.svg" alt="" class="h-8" />
-            </a>
-            <!-- Link 4 -->
-            <a href="#">
-              <img src="images/icon-pinterest.svg" alt="" class="h-8" />
-            </a>
-            <!-- Link 5 -->
-            <a href="#">
-              <img src="images/icon-instagram.svg" alt="" class="h-8" />
-            </a>
-          </div>
-          
+        <!-- Logo -->
+        <div>
+          <img src="images/logo-white.svg" class="h-8" alt="" />
         </div>
-        <!-- List Container -->
-        <div class="flex justify-around space-x-32">
-          <div class="flex flex-col space-y-3 text-white">
-            <a href="#" class="hover:text-brightRed">Home</a>
-            <a href="#" class="hover:text-brightRed">Pricing</a>
-            <a href="#" class="hover:text-brightRed">Products</a>
-            <a href="#" class="hover:text-brightRed">About</a>
-          </div>
-          <div class="flex flex-col space-y-3 text-white">
-            <a href="#" class="hover:text-brightRed">Carrers</a>
-            <a href="#" class="hover:text-brightRed">Comunity</a>
-            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
-          </div>
+        <!-- Social Links Container -->
+        <div class="flex justify-center space-x-4">
+          <!-- Link 1 -->
+          <a href="#">
+            <img src="images/icon-facebook.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 2 -->
+          <a href="#">
+            <img src="images/icon-youtube.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 3 -->
+          <a href="#">
+            <img src="images/icon-twitter.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 4 -->
+          <a href="#">
+            <img src="images/icon-pinterest.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 5 -->
+          <a href="#">
+            <img src="images/icon-instagram.svg" alt="" class="h-8" />
+          </a>
         </div>
-        <!-- Input Container-->
-        <div class="flex flex-col justify-between">
-          <form>
-            <div class="flex space-x-3">
-              <input type="text" 
-              class="flex-1 px-4 rounded-full focus:outline-none"
-              placeholder="Updated in your inbox"
-              />
-              <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRed focus:outline-none">
-                Go
-              </button>
-            </div>
-          </form>
-          <div class="hidden text-white md:block">
-            Copyright &copy; 2022 All rights Reserved
-          </div>
+
+      </div>
+      <!-- List Container -->
+      <div class="flex justify-around space-x-32">
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="#" class="hover:text-brightRed">Home</a>
+          <a href="#" class="hover:text-brightRed">Pricing</a>
+          <a href="#" class="hover:text-brightRed">Products</a>
+          <a href="#" class="hover:text-brightRed">About</a>
         </div>
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="#" class="hover:text-brightRed">Carrers</a>
+          <a href="#" class="hover:text-brightRed">Comunity</a>
+          <a href="#" class="hover:text-brightRed">Privacy Policy</a>
         </div>
       </div>
-    </footer>
-  </body>
+      <!-- Input Container-->
+      <div class="flex flex-col justify-between">
+        <form>
+          <div class="flex space-x-3">
+            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+              placeholder="Updated in your inbox" />
+            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRed focus:outline-none">
+              Go
+            </button>
+          </div>
+        </form>
+        <div class="hidden text-white md:block">
+          Copyright &copy; 2022 All rights Reserved
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+
 </html>
