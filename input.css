@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 body {
-  background-image: url("../images/bg-tablet-pattern.svg");
+  background-image: url("./images/background.svg") center fixed;
   background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: 90% -25%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 #cta {
-  background-image: url("../images/bg-simply-section-desktop.svg");
+  background-image: url("./images/background.svg");
   background-repeat: no-repeat;
 }
 
@@ -19,9 +21,29 @@ body {
     background-size: 500px;
   }
   #cta {
-    background-image: url("../img/bg-simplify-section-mobile.svg");
+    background-image: url("./images/background.png");
   }
 }
+
+#bg-container {
+  background-image: url("./images/background.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.hero {
+  background-image: url("./images/crypto\ 5.png");
+  width: 100%;
+  background-size: cover;
+  min-height: auto;
+}
+#footer {
+  background-image: url("./images/crypto\ 5.png");
+  width: 100%;
+  background-size: cover;
+  min-height: auto;
+}
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;

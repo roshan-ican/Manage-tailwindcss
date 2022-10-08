@@ -8,26 +8,29 @@
   <title>Blockchain </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/input.css" />
+
 </head>
 
-<body>
+<body id="bg-container">
   <!-- navbar -->
-  <nav class="relative container mx-auto p-6">
+ <section class="navbar">
+  <nav class="relative container bg-white max-w-full">
     <!-- flex container -->
     <div class="flex items-center justify-around">
       <!-- Logo -->
-      <div class="pt-2 mx-4">
-        <img src="https://www.fastxpo.com/fxp/images/logo.png" alt="" />
+      <div class="m-auto p-6">
+        <img src="https://www.fastxpo.com/fxp/images/logo.png" alt="" class="absolute mx-4 left-0 bottom-1 my-0" />
       </div>
       <!-- Menu Items -->
-      <div class="hidden space-x-6 md:flex">
-        <a href="#" class="hover:text-yellow-600 font-semibold">Blockchain</a>
-        <a href="#" class="hover:text-darkGreyishBlue">Token</a>
-        <a href="#" class="hover:text-darkGreyishBlue">NFT</a>
-        <a href="#" class="hover:text-darkGreyishBlue">Exchange</a>
-        <a href="#" class="hover:text-darkGreyishBlue">Tokenization</a>
-        <a href="#" class="hover:text-darkGreyishBlue">Company</a>
-        <a href="#" class="hover:text-darkGreyishBlue">Contact Us</a>
+      <div class="hidden space-x-8 mx-4 md:flex">
+        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-semibold">Blockchain</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">Token</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">NFT</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">Exchange</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">Tokenization</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">Company</a>
+        <a href="#" class="text-blue-900 hover:text-darkGreyishBlue font-semibold">Contact Us</a>
 
       </div>
       <!-- Button -->
@@ -57,33 +60,35 @@
       </div>
     </div>
   </nav>
+
+ </section>
   <!-- Hero Section -->
   <section class="hero">
     <!-- Flex Container -->
     <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
       <!-- Left Item -->
       <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-white">
           Blockchain Development Comapany.
         </h1>
-        <p class="text-center text-darkGreyishBlue max-w-sm md:text-left">
+        <p class="text-center text-white max-w-sm md:text-left">
           Manage makes it simple for software teams to plan day to day tasks
           while keeping the larger team goals in view.
         </p>
         <div class="flex justify-center md:justify-start space-x-2 ">
-          <a href="#" class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight">
+          <a href="#" class="font-semibold p-3 px-4 pt-2 text-darkBlue bg-yellow-400 rounded-md baseline hover:bg-yellow-500">
             Create Your Own Token
           </a>
-          <a href="#" class="p-3 px-4 pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight">
+          <a href="#" class="font-semibold p-3 px-4 pt-2 text-darkBlue bg-white rounded-md baseline hover:bg-white">
             Know More
           </a>
         </div>
       </div>
       <!-- Image -->
+      
       <div class="md:w-1/2">
-        <img src="images/illustration-intro.svg" alt="" />
+        <img alt="blockchaind-image" src="images/crypto 11.png">
       </div>
-    </div>
   </section>
   <!-- Features -->
   <section id="features">
@@ -94,19 +99,19 @@
           <!-- list item 1 -->
       <div class="md:w-1/2">
         <img
-          src="https://img.freepik.com/free-vector/cryptocurrency-trading-desk-abstract-concept-illustration-bitcoin-futures-platform-crypto-exchange-trade-service-financial-technology-business-smart-order-routing_335657-878.jpg"
+          src="./images/crypto 12.png"
           alt="" class="object-cover max-w-full h-auto " />
       </div>
       <!-- List Item 2 -->
       <!-- List Item 3 -->
       <div class="flex flex-col space-y-12 md:w-1/2">
-        <h2 class="max-w-d text-4xl font-bold text-center md:text-left">
-          Token Creation Services?
-        </h2>
-        <p class="max-w-sm text-center text-darkGreyishBlue md:text-left">
-          Manage provides all the functionality your team needs, without the
-          complexity. Our software is tailor-made for modern digital product
-          teams
+        <h1 class="max-w-d text-yellow-500 text-4xl font-bold text-center md:text-left">
+          Token Creation Services
+        </h1>
+        <p class="max-w-sm text-center text-white md:text-left">
+          Cryptocurrencies are upending the global financial economy and redefining how we transact.
+          Cryptocurrencies have established themselves as a corner stone of more secure, rapid and transparent transactions by reducing settlement time, eliminating the middleman, and increasing security.
+          Many start-ups and established companies around the world are entering into coin development to take advantage of the benefits of digital currencies, which has increased demand for cryptocurrency development services.
         </p>
       </div>
     </div>
@@ -118,13 +123,12 @@
     <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
       <!-- Left Item -->
       <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-yellow-500">
           Leading Blockchain Application Development Company
         </h1>
-        <p class="text-center text-darkGreyishBlue max-w-sm md:text-left">
-          Manage makes it simple for software teams to plan day to day tasks
-          while keeping the larger team goals in view.
-          Crypto is india's leading blockchain company
+        <p class="text-center text-white max-w-sm md:text-left">
+          Crypto is india's leading Blockchain development company, specializing in providing bespole blockchain technological solutions to match your specific business requirements. 
+          We gain tremendous experience in the blockchain technology field as one of the early adopters and serverd 300+ clients from various fields such as business, banking & finance, real estate, healthcare, automobile & transportation, insurance, trading and many other industries as one of the early adopters of the blockchain technology.
         </p>
         <!-- <div class="flex justify-center md:justify-start space-x-2 ">
           <a
@@ -142,21 +146,19 @@
         </div> -->
       </div>
       <!-- Image -->
-      <div class="md:w-1/2">
-        <img src="images/illustration-intro.svg" alt="" />
+      <div class="md:w-1/2 object-fill">
+        <img class="w-full h-full rounded-full" id="lead-image" src="images/crypto-network.jpg" alt="" />
       </div>
     </div>
   </section>
   <!-- Card carasouls -->
   <section>
     <div class="flex flex-col mb-5 space-y-12 md:1/2 items-center">
-      <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left">
+      <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left text-white">
         Explore our blockchain development services
       </h1>
-      <p class="max-w-full text-center text-darkGreyishBlue md:text-left">
-        Manage makes it simple for software teams to plan day to day tasks
-        while keeping the larger team goals in view.
-        Crypto is india's leading blockchain company
+      <p class="max-w-full text-center text-white md:text-left">
+        Crypto provides a wide range of services with a clear focus on providing our clients with bug-free software.
       </p>
     </div>
     <div class="flex">
@@ -175,8 +177,8 @@
         <ul id="slider" class="flex w-full">
           <li class="w-96 p-5">
             <div class="min-h-full w-full border rounded-lg p-5 ">
-              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Hyper Ledger Development</h5>
-              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Hyper Ledger Development</h5>
+              <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
                 similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
                 maxime eos. Delectus, esse veniam!</p>
 
@@ -184,8 +186,8 @@
           </li>
           <li class="w-96 p-5">
             <div class="min-h-full w-full border rounded-lg p-5 ">
-              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Private Blockchain Development</h5>
-              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Private Blockchain Development</h5>
+              <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
                 similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
                 maxime eos. Delectus, esse veniam!</p>
 
@@ -193,8 +195,8 @@
           </li>
           <li class="w-96 p-5">
             <div class="min-h-full w-full border rounded-lg p-5 ">
-              <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
-              <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+              <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Smart contract development & audit</h5>
+              <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
                 similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
                 maxime eos. Delectus, esse veniam!</p>
 
@@ -223,10 +225,10 @@
   <!-- Features section -->
   <section>
       <div class="flex flex-col mb-5 space-y-12 md:1/2 items-center">
-        <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left">
+        <h1 class="max-w-full text-4xl font-bold text-center md:text-5xl md:text-left text-white">
           Features of our Blockchain-based supply chain solution
         </h1>
-        <p class="max-w-full text-center text-darkGreyishBlue md:text-left">
+        <p class="max-w-full text-center text-white md:text-left">
           To ensure the great performance of our blockchain supply we've add the following features to our website
         </p>
     </div>
@@ -235,8 +237,8 @@
       <ul id="slider" class="grid grid-cols-3 max-w-full min-h-full gap-5 space-y-5 overflow-hidden">
         <li class="w-full p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Hyper Ledger Development</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Hyper Ledger Development</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -244,8 +246,8 @@
         </li>
         <li class="w-96 p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Private Blockchain Development</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Private Blockchain Development</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -253,8 +255,8 @@
         </li>
         <li class="w-full p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Smart contract development & audit</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -262,8 +264,8 @@
         </li>
         <li class="w-full p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Smart contract development & audit</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -271,8 +273,8 @@
         </li>
         <li class="w-full p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Smart contract development & audit</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -280,8 +282,8 @@
         </li>
         <li class="w-full p-5">
           <div class="min-h-full w-full border rounded-lg p-5 ">
-            <h5 class="mt-4 mb-2 text-xl font-bold text-gray-700">Smart contract development & audit</h5>
-            <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
+            <h5 class="mt-4 mb-2 text-xl font-bold text-yellow-500">Smart contract development & audit</h5>
+            <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non fugit iste
               similique fugiat voluptas ullam placeat perferendis, numquam neque, voluptatem pariatur natus nam cum
               maxime eos. Delectus, esse veniam!</p>
 
@@ -293,73 +295,12 @@
 
     </div>
   </section>
-  <!-- Testimonials -->
-  <section id="testimonials">
-    <!-- container to heading and testm block -->
-    <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-      <!-- Heading -->
-      <h2 class="text-4xl font-bold text-center">
-        What's different about Manage?
-      </h2>
-      <!-- Testimonials Container -->
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-        <!-- Testimonial 1 -->
-        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:w-1/3">
-          <img src="images/avatar-anisha.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Anisha Li</h5>
-          <p class="text-sm text-darkGreyishBlue">
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps
-            everyone motivated.”
-          </p>
-        </div>
-        <!-- Testimonial 2 -->
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGrey md:flex md:w-1/3">
-          <img src="images/avatar-ali.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Ali Bravo</h5>
-          <p class="text-sm text-darkGreyishBlue">
-            “We have been able to cancel so many other subscriptions since
-            using Manage. There is no more cross-channel confusion and
-            everyone is much more focused.”
-          </p>
-        </div>
-        <!-- Testimonials 3 -->
-        <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
-          <img src="images/avatar-richard.png" class="w-16 -mt-14" alt="" />
-          <h5 class="text-lg font-bold">Richard Watts</h5>
-          <p class="text-sm text-darkGreyishBlue">
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps
-            everyone motivated.”
-          </p>
-        </div>
-      </div>
-      <!-- Button -->
-      <div class="my-16">
-        <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
-          Started</a>
-      </div>
-    </div>
-  </section>
-  <!-- CTA Section Call to Action -->
-  <section id="cta" class="bg-brightRed">
-    <div
-      class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
-      <!-- Heading -->
-      <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
-        Simplify How Your Team Works Today!
-      </h2>
-      <!-- Button -->
-      <div>
-        <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-darkBlue">Get
-          Started</a>
-      </div>
-    </div>
-  </section>
+
+  
   <!-- Footer -->
-  <footer class="bg-veryDarkBlue">
+  <footer id="footer" class="bg-black">
     <!-- Flex Container -->
-    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+    <div class="container flex justify-start px-15 py-10 space-y-8 mx-5 md:flex-row md:space-y-0">
       <!-- Logo and social links container -->
       <div
         class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
@@ -367,11 +308,29 @@
           Copyright &copy; 2022, All Rights Reserved
         </div>
         <!-- Logo -->
-        <div>
-          <img src="images/logo-white.svg" class="h-8" alt="" />
+        <div class="bg-white px-2 p-2">
+          <img src="https://www.fastxpo.com/fxp/images/logo.png" class="h-8 w-full" alt="" />
+        </div>
+        <div class="flex flex-col justify-center space-y-2 py-2">
+          <p class="text-white">phone:
+            +91 9790033633</p>
+          <p class="text-white">
+            whatsapp: +91 9790033633
+          </p>
+          <p class="text-white">
+            Email: vsjayan@gmail.com
+          </p>
+          <p class="text-white space-y-5">
+            Address: AA Block 149,
+            Avenue, Anna Nagar,<br>
+            Near Anna Nagar Roundana <br>
+            Land Mark - Next building <br>
+            Jayam & Co Chennai, <br>
+            Tamil Nadu 600040
+          </p>
         </div>
         <!-- Social Links Container -->
-        <div class="flex justify-center space-x-4">
+        <div class="flex justify-center pt-4 space-x-4">
           <!-- Link 1 -->
           <a href="#">
             <img src="images/icon-facebook.svg" alt="" class="h-8" />
@@ -393,38 +352,26 @@
             <img src="images/icon-instagram.svg" alt="" class="h-8" />
           </a>
         </div>
-
       </div>
       <!-- List Container -->
-      <div class="flex justify-around space-x-32">
-        <div class="flex flex-col space-y-3 text-white">
-          <a href="#" class="hover:text-brightRed">Home</a>
-          <a href="#" class="hover:text-brightRed">Pricing</a>
-          <a href="#" class="hover:text-brightRed">Products</a>
-          <a href="#" class="hover:text-brightRed">About</a>
-        </div>
-        <div class="flex flex-col space-y-3 text-white">
-          <a href="#" class="hover:text-brightRed">Carrers</a>
-          <a href="#" class="hover:text-brightRed">Comunity</a>
-          <a href="#" class="hover:text-brightRed">Privacy Policy</a>
-        </div>
-      </div>
-      <!-- Input Container-->
-      <div class="flex flex-col justify-between">
-        <form>
-          <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
-              placeholder="Updated in your inbox" />
-            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRed focus:outline-none">
-              Go
-            </button>
-          </div>
-        </form>
-        <div class="hidden text-white md:block">
-          Copyright &copy; 2022 All rights Reserved
-        </div>
-      </div>
-    </div>
+      <div class="flex pl-60 justify-evenly space-x-40">
+       <div class="flex flex-col space-y-3 text-white">
+         <a href="#" class="text-yellow-500 font-medium">Links</a>
+         <a href="#" class="text-white font-medium">Blockchain</a>
+         <a href="#" class="text-white font-medium">Token</a>
+         <a href="#" class="text-white font-medium">NFT</a>
+         <a href="#" class="text-white font-medium">Exchange</a>
+         <a href="#" class="text-white font-medium">Tokenization</a>
+       </div>
+       <div class="flex flex-col space-y-3 text-white">
+         <a href="#" class="text-yellow-500 font-medium">Company</a>
+         <a href="#" class="text-white font-medium">About us</a>
+         <a href="#" class="text-white font-medium">Carrer</a>
+         <a href="#" class="text-white font-medium">Contact us</a>
+         <a href="#" class="text-white font-medium">Terms & Conditions</a>
+         <a href="#" class="text-white font-medium">Privacy & Policy</a>
+       </div>
+     </div>
     </div>
   </footer>
 </body>
